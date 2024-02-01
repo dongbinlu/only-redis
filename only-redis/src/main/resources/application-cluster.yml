@@ -1,0 +1,16 @@
+server:
+  port: 8090
+
+spring:
+
+  redis:
+    password: zhuge
+    lettuce:
+      pool:
+        max-idle: 10
+        max-active: 1000
+        max-wait: -1
+        min-idle: 0
+    timeout: 6000
+    cluster:
+      nodes: 10.1.20.73:8001,10.1.20.73:8002,10.1.20.73:8003,10.1.20.73:8004,10.1.20.73:8005,10.1.20.73:8006

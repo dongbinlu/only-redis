@@ -1,0 +1,12 @@
+server:
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: only-redis
+
+  profiles:
+    active:
+      - master_slave
+
